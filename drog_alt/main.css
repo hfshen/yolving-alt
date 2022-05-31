@@ -1,0 +1,118 @@
+body{
+	background-color: #ccd4df;
+	padding: 0px;
+	margin: 0px;
+}
+.top_main{
+	width: 100%;
+	line-height: 90px;
+	overflow:auto;
+}
+.tm_left{
+	width: 40%;
+	float: left;
+	margin-left: 150px;
+	font-size: 1.8rem; 
+	font-weight: bold;
+	
+}
+.tm_right{
+	width: 10%;
+	float: right;
+	margin-right: 20px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: right;
+}
+.center_main{
+	width: 100%;
+	margin-top: 50px;
+	line-height: 40px;
+}
+.cm_list{
+	width: 100%;
+	overflow: auto;
+	font-size: 1.2rem;
+	font-weight: bold;
+
+}
+.cml_text{
+	width: 200px;
+	float: right;
+	margin-right: 20px;
+}
+.cml_quan1{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #54a75f;
+	float: right;
+	margin-right: 20px;
+	margin-top: 7px;
+}
+	.cml_quan2{
+		width: 25px;
+		height: 25px;
+		border-radius: 2px;
+		background-color: #f6c447;
+		float: right;
+		margin-right: 20px;
+		margin-top: 7px;
+	}
+	.cml_quan3{
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background-color: #eb3422;
+		float: right;
+		margin-right: 20px;
+		margin-top: 7px;
+	}
+	.bottom_main{
+		width: 100%;
+		border-top: 0.3vw solid #fbfcff;
+		border-bottom: 0.3vw solid #fbfcff;
+		margin-top: 20px;
+		position: fixed;
+		bottom: 0px;
+		height: 300px;
+	}
+	.bm_list{
+		width: 33.3%;
+		float: left;
+		line-height: 80px;
+		text-align: center;
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+	.bml_one{
+		width: 99.2%;
+		border-right: 0.3vw solid #fbfcff;
+		border-bottom: 0.3vw solid #fbfcff;
+	}
+	.bml_two{
+		width: 99.2%;
+		border-right: 0.3vw solid #fbfcff;
+		border-bottom: 0.3vw solid #fbfcff;
+	}
+	.bml_three{
+		width: 99.2%;
+		background-color: #4fac5b;
+		height: 130px;
+		border-right: 0.3vw solid #fbfcff;
+		border-bottom: 0.3vw solid #fbfcff;		
+	}
+	.bml_three_orange{
+		width: 99.2%;
+		background-color: #f6c447;
+		height: 130px;
+		border-right: 0.3vw solid #fbfcff;
+		border-bottom: 0.3vw solid #fbfcff;		
+	}
+	.bml_three_red{
+		width: 99.2%;
+		background-color: #eb3422;
+		height: 130px;
+		border-right: 0.3vw solid #fbfcff;
+		border-bottom: 0.3vw solid #fbfcff;		
+	}

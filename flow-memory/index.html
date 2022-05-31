@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+  <meta charset="utf-8">
+  <title>기억매칭게임</title>
+  <meta name="description" content="">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../main-page/css/app.css">
+  <link rel="stylesheet" href="../main-page/css/style.css">
+</head>
+
+<body>
+
+  <audio id="myAudioCorrect">
+    <source src="../math_countdown2/correct.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="myAudioWrong">
+    <source src="../math_countdown2/wrong.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="flowMemory">
+    <source src="../sound/game_match.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="finishFocus">
+    <source src="../sound/finish_focus.mp3" type="audio/mpeg">
+  </audio>
+  <div class="overlay">
+    <div class="overlay-content">
+      <section class="switch-msg"></section>
+      <ul class="stars"></ul>
+      <h4>총 실행 횟수: <span class="moves">0</span> 총 소요 시간: <span class="timer"><span class="timer-minutes">0</span>:<span
+            class="timer-seconds">00</span></span></h4>
+      <button class="restart" onclick="window.location.reload()"><i class="fa fa-repeat"></i> 다시시작</button>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <section class="score-panel">
+      <ul class="stars"></ul>
+      <span class="moves">0</span> 이동
+      <span class="timer"><span class="timer-minutes">0</span>:<span class="timer-seconds">00</span></span>
+    </section>
+    <ul class="deck"></ul>
+
+    <div class="outer-menu">
+      <input class="checkbox-toggle" type="checkbox" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+
+              <li><a href="../flow-memory/index.html">다시시작</a></li>
+              <li><a href="../index.html">게임 나가기</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

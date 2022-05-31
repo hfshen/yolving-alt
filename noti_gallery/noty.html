@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공지사항</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://raw.githubusercontent.com/connorocampo/image-gallery/master/images/favicon.png"
+    />
+    <meta
+      name="description"
+      content="An image gallery using HTML, CSS (CSS Grid for responsive styles), and vanilla JavaScript"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>공지사항</h1>
+      <div id="btnContainer" class="filter-buttons">
+        <button class="btn active" onclick="showAll()">전체보기</button>
+        <button class="btn" onclick="showNature()">가평군</button>
+        <button class="btn" onclick="showPets()">양양군</button>
+        <button class="btn" onclick="showArt()">서울시</button>
+      </div>
+      <div id="gallery"></div>
+      <!-- /#gallery -->
+
+      <div id="popUp">
+        <img src="" alt="" id="selectedImage" />
+      </div>
+    </div>
+    <!-- /.container -->
+    <script src="index.js"></script>
+  </body>
+</html>

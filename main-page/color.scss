@@ -1,0 +1,10 @@
+$mainColor: red
+
+.banner {
+    color: $mainColor;
+    font-size: 1.3rem;
+
+    &__autor {
+        padding: .8rem;
+    }
+}

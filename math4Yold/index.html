@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../main-page/css/app.css">
+  <link rel="stylesheet" href="../main-page/css/style.css">
+  <link rel="stylesheet" href="../math4Yold/style.css">
+
+
+
+  <title>덧셈</title>
+
+</head>
+
+<body>
+
+  <audio id="myAudio">
+    <source src="../math4Yold/wrong.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <script src="../math4Yold/jquery.min.js"></script>
+    <!-- <script src="../math4Yold/add.js"></script> -->
+    <div class="container">
+      <div class="nav">
+        <h2><span><i class="fa fa-trophy" aria-hidden="true"></i></span> 계산하기</h2>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">덧셈</a></li>
+            <li><a href="subtract.html">뺄셈</a></li>
+            <li><a href="multiply.html">곱셈</a></li>
+            <li><a href="divide.html">나눗셈</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- 시간 카운팅  -->
+      <div id="timeremaining">
+        Time remaining :<span id="timeremainingvalue">60</span>sec
+
+      </div>
+      <div>
+        <span id="timer">
+          <span id="time">60</span>초
+        </span>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <div class="equation">
+      <h1 id="num1" style="color:#FE4A49;"></h1>
+      <h1 style="color: #2AB7CA;">+</h1>
+      <h1 id="num2" style="color: #FED766">1</h1>
+      <h1 style="color: #F86624">=</h1>
+      <h1 style="color: gray">?</h1>
+    </div>
+
+    <!-- <div class="answer-options"> -->
+    <div> <button class="options1" style="background-color: #FE4A49; ">
+        <h1 id="option1">1</h1>
+      </button></div>
+    <div> <button class="options2" style="background-color: #0066ff;">
+        <h1 id="option2">2</h1>
+      </button></div>
+    <div><button class="options3" style="background-color: #FED766;">
+        <h1 id="option3">3</h1>
+      </button></div>
+    <!-- </div> -->
+  </div>
+
+  <div class="outer-menu">
+    <input class="checkbox-toggle" type="checkbox" />
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="../math4Yold/index.html">다시시작</a></li>
+            <li><a href="../index.html">게임 나가기</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="add.js"></script>
+
+</body>
+
+</html>

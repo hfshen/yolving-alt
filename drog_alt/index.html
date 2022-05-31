@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="main.css">  
+    <script type="text/javascript">
+    	
+        function showTime(){
+            var curTime = new Date();
+			var hour_now=curTime.getHours();
+			var minutes_now=curTime.getMinutes();
+			$("#time9").attr("class","bml_three");
+			$("#time12").attr("class","bml_three");
+			$("#time18").attr("class","bml_three");
+			console.log(hour_now);
+			if(hour_now==8 && minutes_now>=50){
+				$("#time9").attr("class","bml_three_orange");
+			}
+			if(hour_now==9 && minutes_now<=10){
+				$("#time9").attr("class","bml_three_red");
+			}
+			if(hour_now==11 && minutes_now>=50){
+				$("#time12").attr("class","bml_three_orange");
+				
+			}
+			if(hour_now==12 && minutes_now<=10){
+				$("#time12").attr("class","bml_three_red");
+			}
+			if(hour_now==17 && minutes_now>=50){
+				$("#time18").attr("class","bml_three_orange");
+			}
+			if(hour_now==18 && minutes_now<=10){
+				$("#time18").attr("class","bml_three_red");
+			}
+            $("#jstime").html(formatDateTime(curTime));
+            setTimeout("showTime()",1000)
+        }
+        function formatDateTime(date) {
+            if (date == "" || !date) {
+                return "";
+            }
+            var date = new Date(date);
+            var y = date.getFullYear();
+            var m = date.getMonth() + 1;
+            m = m < 10 ? ('0' + m) : m;
+            var d = date.getDate();
+            d = d < 10 ? ('0' + d) : d;
+            var h = date.getHours();
+            h = h < 10 ? ('0' + h) : h;
+            var minute = date.getMinutes();
+            minute = minute < 10 ? ('0' + minute) : minute;
+            var second = date.getSeconds();
+            second = second < 10 ? ('0' + second) : second;
+            return h + ':' + minute; 
+        }
+        $(function (){showTime()});		
+    </script>
+</head>
+<body>
+	<div class="top_main"> 
+		<div class="tm_left">오늘의 약시간 입니다 </div>
+		<div class="tm_right" id="jstime"></div> 
+	</div>
+	<div class="center_main">
+		<div class="cm_list">
+			<div class="cml_text">약 드실 시간이 아닙니다 </div>    
+			<div class="cml_quan1"></div>      
+		</div> 
+		<div class="cm_list">
+			<div class="cml_text">복약시간 10분 전 입니다 </div>
+			<div class="cml_quan2"></div>    
+		</div> 
+		<div class="cm_list">
+			<div class="cml_text">복약시간 입니다 </div>
+			<div class="cml_quan3"></div>     
+		</div> 
+		<div class="bottom_main">
+			<div class="bm_list">
+				<div class="bml_one">아 침</div>
+				<div class="bml_two">09:00</div>
+				<div id="time9" class="bml_three"></div>       
+			</div>
+			<div class="bm_list">
+				<div class="bml_one">점 심</div>
+				<div class="bml_two">12:00</div> 
+				<div id="time12" class="bml_three_orange"></div>       
+			</div>
+			<div class="bm_list">
+				<div class="bml_one">저 녁</div>  
+				<div class="bml_two">18:00</div>    
+				<div id="time18" class="bml_three_red"></div>                                
+			</div>
+		</div> 
+	</div> 
+</body>    
+</html>   
+   
